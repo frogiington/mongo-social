@@ -1,5 +1,6 @@
-const {Schema, model} = require('mongoose');
+const {Schema, model, mongoose} = require('mongoose');
 const reaction = require('./reaction')
+
 //Schema that creates thought model
 //ThoguhtText: string, required, must be between 1/280
 //createdAt: date, set default value to current time stamp, use getter method

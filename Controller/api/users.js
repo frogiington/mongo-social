@@ -20,22 +20,18 @@ const User = require ('../../Models/user.js')
     //DELETE to remove a friend from a users list
 
 router.get('/getAllUsers', async (req,res) =>{
-    try {
          console.log('get all users reached');
-        res.status(200).end();
-      } catch (err) {
-         res.status(400).json(err);
-     }
+         User.find().then(data => 
+         {res.json(data).end()}
+         )
  }); 
 
-router.get('/singleUser', async (req, res) =>{
-    try {
+router.get('/:id', async (req, res) =>{
+
         console.log ('get single user reached');
-        User.findById(id)
-        res.status(200).end();
-    } catch (err) {
-        res.status(400).json(err);
-    }
+        User.find(req.param.id).then(data => 
+        {res.json(data).end()}
+        )
 })
 
 
