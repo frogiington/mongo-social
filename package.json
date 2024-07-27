@@ -1,0 +1,20 @@
+{
+  "name": "mongo-social",
+  "version": "1.0.0",
+  "description": "a social api using postman",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frogiington/mongo-social"
+  },
+  "author": "Alyson Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "8.5.0",
+    "express": "4.19.2"
+  }
+}
